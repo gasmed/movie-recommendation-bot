@@ -40,6 +40,19 @@ docker-compose up --build
 
 4. The bot should now be running and ready to accept commands on Telegram.
 
+## DockerHub URL
+1. Dowbload images:
+```bash
+docker pull nezdanchikg/moviebot-mongodb-1:tagname
+docker pull nezdanchikg/moviebot-movie-bot-1:tagname
+```
+
+2. Run containers:
+```bash
+docker run -d --name moviebot-mongodb-1 nezdanchikg/moviebot-mongodb-1:tagname
+docker run -d --name moviebot-movie-bot-1 nezdanchikg/moviebot-movie-bot-1:tagname
+```
+
 ## Usage
 
 Start a chat with the bot on Telegram and use the following commands:
@@ -60,3 +73,5 @@ Start a chat with the bot on Telegram and use the following commands:
 Update the `application.properties` file to change MongoDB connection settings if needed.
 
 Make sure to set your Telegram Bot Token in the `MovieRecommendationBot` class.
+
+
