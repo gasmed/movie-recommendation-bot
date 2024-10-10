@@ -43,14 +43,14 @@ docker-compose up --build
 ## DockerHub URL
 1. Dowbload images:
 ```bash
-docker pull nezdanchikg/moviebot-mongodb-1:tagname
-docker pull nezdanchikg/moviebot-movie-bot-1:tagname
+docker pull nezdanchikg/moviebot-mongodb-1
+docker pull nezdanchikg/moviebot-movie-bot-1
 ```
 
 2. Run containers:
 ```bash
-docker run -d --name moviebot-mongodb-1 nezdanchikg/moviebot-mongodb-1:tagname
-docker run -d --name moviebot-movie-bot-1 nezdanchikg/moviebot-movie-bot-1:tagname
+docker run -d --name moviebot-mongodb-1 nezdanchikg/moviebot-mongodb-1
+docker run -d --name moviebot-movie-bot-1 nezdanchikg/moviebot-movie-bot-1
 ```
 
 ## Usage
