@@ -53,6 +53,19 @@ docker run -d --name moviebot-mongodb-1 nezdanchikg/moviebot-mongodb-1
 docker run -d --name moviebot-movie-bot-1 nezdanchikg/moviebot-movie-bot-1
 ```
 
+## Adding movies to the database
+
+1. Open a running container with mongodb and go to the "exec" tab
+
+2. Write these commands in order to get to the right place
+```bash
+mongosh
+```
+```bash
+use moviebot
+```
+
+3. The last point is to paste the entire command from the file "insert_films.js" into the console
 ## Usage
 
 Start a chat with the bot on Telegram and use the following commands:
